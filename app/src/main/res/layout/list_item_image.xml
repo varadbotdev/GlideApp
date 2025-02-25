@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Thumbnail ImageView -->
+    <ImageView
+        android:id="@+id/thumbnailImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_placeholder"
+        android:contentDescription="Thumbnail" />
+
+    <!-- TextView for Image Path -->
+    <TextView
+        android:id="@+id/imagePathTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:maxLines="2"
+        android:ellipsize="end" />
+</LinearLayout>
